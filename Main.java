@@ -11,44 +11,44 @@ public class Main {
 
         File dir1 = new File("C://Games/src");
         if (dir1.mkdir()) {
-            currentText = "Каталог src создан";
+            currentText = "Каталог " + dir1.getName() +  " создан ";
             text = text + currentText + "\r\n";
         }
 
         File dir2 = new File("C://Games/res");
         if (dir2.mkdir()) {
-            currentText = "Каталог res создан";
+            currentText = "Каталог " + dir2.getName() +  " создан ";
             text = text + currentText + "\r\n";
         }
 
         File dir3 = new File("C://Games/savegames");
         if (dir3.mkdir()) {
-            currentText = "Каталог savegames создан";
+            currentText = "Каталог " + dir3.getName() +  " создан ";
             text = text + currentText + "\r\n";
         }
 
         File dir4 = new File("C://Games/temp");
         if (dir4.mkdir()) {
-            currentText = "Каталог temp создан";
+            currentText = "Каталог " + dir4.getName() +  " создан ";
             text = text + currentText + "\r\n";
         }
 
         File dir1_1 = new File("C://Games/src/main");
         if (dir1_1.mkdir()) {
-            currentText = "Каталог main создан";
+            currentText = "Каталог " + dir1_1.getName() +  " создан ";
             text = text + currentText + "\r\n";
         }
 
         File dir1_2 = new File("C://Games/src/test");
         if (dir1_2.mkdir()) {
-            currentText = "Каталог test создан";
+            currentText = "Каталог " + dir1_2.getName() +  " создан ";
             text = text + currentText + "\r\n";
         }
 
         File file1_1_1 = new File("C://Games/src/main", "Main.java");
         try {
             if (file1_1_1.createNewFile()) {
-                currentText = "Файл Main.java создан";
+                currentText = "Файл " + file1_1_1.getName() + " создан";
                 text = text + currentText + "\r\n";
             }
         } catch (IOException ex) {
@@ -58,7 +58,7 @@ public class Main {
         File file1_1_2 = new File("C://Games/src/main", "Utils.java");
         try {
             if (file1_1_2.createNewFile()) {
-                currentText = "Файл Utils.java создан";
+                currentText = "Файл " + file1_1_2.getName() + " создан";
                 text = text + currentText + "\r\n";
             }
         } catch (IOException ex) {
@@ -67,26 +67,26 @@ public class Main {
 
         File dir2_1 = new File("C://Games/res/drawables");
         if (dir2_1.mkdir()) {
-            currentText = "Каталог drawables создан";
+            currentText = "Каталог " + dir2_1.getName() +  " создан ";
             text = text + currentText + "\r\n";
         }
 
         File dir2_2 = new File("C://Games/res/vectors");
         if (dir2_2.mkdir()) {
-            currentText = "Каталог vectors создан";
+            currentText = "Каталог " + dir2_2.getName() +  " создан ";
             text = text + currentText + "\r\n";
         }
 
         File dir2_3 = new File("C://Games/res/icons");
         if (dir2_3.mkdir()) {
-            currentText = "Каталог icons создан";
+            currentText = "Каталог " + dir2_3.getName() +  " создан ";
             text = text + currentText + "\r\n";
         }
 
         File file4_1 = new File("C://Games/temp", "temp.txt");
         try {
             if (file4_1.createNewFile()) {
-                currentText = "Файл temp.txt создан";
+                currentText = "Файл " + file4_1.getName() + " создан";
                 text = text + currentText + "\r\n";
             }
         } catch (IOException ex) {
